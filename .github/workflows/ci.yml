@@ -42,9 +42,10 @@ jobs:
           path: build
       - name: Create a Release
         if: github.event_name == 'push'
-        run: npx semantic-release
         env:
-          GITBHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
       - name: Deploy to Stagin
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: npx surge --project ./build --domain quaint-fish.surge.sh
