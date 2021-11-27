@@ -55,4 +55,4 @@ now the branches are protected -> you can create a new branche now you can pull 
     -> Make your build folder in the case are avaible
     -> Deploy in surge your build folder
     -> You´ve to be a credential in the secrets on github
-    * in the cmd -> surge token -> surge whoami
+    * in the cmd -> surge token -> surge whoami ->
