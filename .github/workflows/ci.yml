@@ -41,8 +41,9 @@ jobs:
           name: build
           path: build
       - uses: actions/download-artifact@v2
+        if: github.event_name == 'push'
         with:
-          name: my-artifact
+          name: build
       - name: Deploy to Stagin
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain quaint-fish.surge.sh
