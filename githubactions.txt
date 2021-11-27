@@ -65,4 +65,4 @@ now the branches are protected -> you can create a new branche now you can pull 
 5.2 -> You can fix that ( 5.1.1 ) using semantic version & Conventional Commits 
     * https://semver.org/lang/es/
     * https://www.conventionalcommits.org/en/v1.0.0/
-    * instaling semantic realease -> npm install --save-dev semantic-release -> then config release.config.js  ||
+    * instaling semantic realease -> npm install --save-dev semantic-release -> then config release.config.js  ||||
