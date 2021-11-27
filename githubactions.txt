@@ -29,3 +29,11 @@ we deploy this app static using surge ``` npm install --global surge [ https://s
 -> The head Branches in our projects are [ main, master, develop ]
 *   -> Other branches in our team can be : feature01, feature02, feature03 -> Run Workflow and Pull request to merge with Develop -> Then
     develop -> Run Workflow -> Then merge to Master -> Run Workflow -> Then To Producction 
+
+1. Create a Branches [ Develop & Features what you need ]
+2. Create a branch rules protection
+    * Require pull request review before mergin
+    * dismmos stale pull request aprovals 
+    * require review from Code Owner 
+    * Require status checks to pass before merging 
+    * include admins 
