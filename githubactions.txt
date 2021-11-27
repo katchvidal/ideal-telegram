@@ -37,3 +37,8 @@ we deploy this app static using surge ``` npm install --global surge [ https://s
     * require review from Code Owner 
     * Require status checks to pass before merging 
     * include admins 
+
+now the branches are protected -> you can create a new branche now you can pull request to merge into develop
+* install dependencies
+* check coding format
+* run automated tests
