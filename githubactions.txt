@@ -1,0 +1,31 @@
+--------        Practice CI/CD with Github Actions   ( react javascript framework  )        --------
+
+->  You Know what to do .github/workflow
+->  CODEOWNER
+->  Commands to React App 
+
+"scripts": {
+    "start": "react-scripts start", -> Development Mode
+    "build": "react-scripts build", -> Generate Folder for Prod
+    "test": "react-scripts test",   -> Run the tests
+    "eject": "react-scripts eject"  -> I dont know what this do!!!
+},
+
+we deploy this app static using surge ``` npm install --global surge [ https://surge.sh/  ] ```
+1. npm run build -> To generate the Build Folder to deploy using surge 
+2.  Run serge command and config
+*   quaint-fish.surge.sh -> Surge Domain
+
+
+-> Using Prettier what code rules we and our team need to write the same shape
+1. Prettier [ https://prettier.io/ ] 
+2. install Prettier [ npm install --save-dev --save-exact prettier ]
+* Prettier PlayGround [ You need to decide what is the correctly form to continues write the entire project ]
+3. create a file -> .prettierrc -> and paste a JSON generate in prettier PlayGround
+
+--------------------------------------------------------------------------------------------------------------------------
+
+-> Discuss about our project Depend the team member
+-> The head Branches in our projects are [ main, master, develop ]
+*   -> Other branches in our team can be : feature01, feature02, feature03 -> Run Workflow and Pull request to merge with Develop -> Then
+    develop -> Run Workflow -> Then merge to Master -> Run Workflow -> Then To Producction 
