@@ -56,3 +56,13 @@ now the branches are protected -> you can create a new branche now you can pull 
     -> Deploy in surge your build folder
     -> You´ve to be a credential in the secrets on github
     * in the cmd -> surge token -> surge whoami ->
+
+5.1 -> Upload / Download Artifacts -> You can upload your test & your build folder -> can use actions/upload{download}@v2
+5.1.1 -> In this Point You can merge with branch develop your automatize the most important work is check ( prettier ) and Upload 
+         but your semantic version or commit are not ok because you are not using the same semantic in the commits and are not standable 
+         what fixin, docs or what else you do.
+
+5.2 -> You can fix that ( 5.1.1 ) using semantic version & Conventional Commits 
+    * https://semver.org/lang/es/
+    * https://www.conventionalcommits.org/en/v1.0.0/
+    * instaling semantic realease -> npm install --save-dev semantic-release -> then config release.config.js 
