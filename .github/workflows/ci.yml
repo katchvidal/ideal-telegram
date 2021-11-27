@@ -27,10 +27,11 @@ jobs:
         env:
           CI: true
       - name: Upload Test Coverage
-      - uses: actions/checkout@v2
+        uses: "actions/upload-artifact@v2"
         with:
-          name: code-coverage
+          name: coverga
           path: coverage
+          if-no-files-found: "warn"
       - name: Build Project
         if: github.event_name == 'push'
         run: npm run build
