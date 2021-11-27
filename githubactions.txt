@@ -42,3 +42,17 @@ now the branches are protected -> you can create a new branche now you can pull 
 * install dependencies
 * check coding format
 * run automated tests
+
+3. Create the CI.yml -> Do the configs
+    * git push --set-upstream origin workflow
+    * now you can required a certain folder ( build ) in Main ( Master ) in the branches rules 
+    to can merge with the main ( master ) merge
+
+4. Make you team to collaborate ( you need if you want to merge you code )
+
+5. Make your code automate deploy when you collaborate team are review the code and all ok,
+    first step 
+    -> Make your build folder in the case are avaible
+    -> Deploy in surge your build folder
+    -> You´ve to be a credential in the secrets on github
+    * in the cmd -> surge token -> surge whoami ->
