@@ -79,3 +79,5 @@ now the branches are protected -> you can create a new branche now you can pull 
         }
     }
     * Then run the next command in CLI -> echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+
+7. You can agrregate commitizen 
