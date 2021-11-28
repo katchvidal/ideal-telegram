@@ -66,3 +66,16 @@ now the branches are protected -> you can create a new branche now you can pull 
     * https://semver.org/lang/es/
     * https://www.conventionalcommits.org/en/v1.0.0/
     * instaling semantic realease -> npm install --save-dev semantic-release -> then config release.config.js  ||||
+
+6. Push your test & other things to codecov -> Follow the instrruccion in the CI.YML 
+    6.1 You need a Secret in your Repository
+
+7. Commitlint CLI to help with the commit message -> Husky make slow your work flow 
+    * npm install --save-dev @commitlint/config-conventional @commitlint/cli
+    * then paste the next code in the package.json 
+    "husky": {
+        "hooks" : {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    }
+    * Then run the next command in CLI -> echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
